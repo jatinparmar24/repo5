@@ -1,13 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 ul{
-    border: 10px solid red;
+    border: 1px solid red;
 }
 .navbar li a{
     text-decoration: none;
-    margin: 25px;
+    margin: 10px;
+    list-style: none;
 }
 #how{
     border: 10px solid blueviolet;
 }
 #that{
     border: 10px solid goldenrod;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+#maindiv .box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+#maindiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
