@@ -1,0 +1,13 @@
+ul{
+    border: 10px solid red;
+}
+.navbar li a{
+    text-decoration: none;
+    margin: 25px;
+}
+#how{
+    border: 10px solid blueviolet;
+}
+#that{
+    border: 10px solid goldenrod;
+}
