@@ -60,3 +60,7 @@ button{
     width: 100px;
     height: 100vh;
 }
+input{
+    position: fixed;
+    left: 200px;
+}
