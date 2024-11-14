@@ -59,8 +59,8 @@ button{
     background-image: url(car.tg.jpg);
     width: 100px;
     height: 100vh;
+    position: absolute;
 }
 input{
-    position: fixed;
-    left: 200px;
+    display: flex;
 }
