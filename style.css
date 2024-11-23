@@ -16,6 +16,7 @@ ul{
 #that{
     border: 1px solid blue;
     background-color: aqua;
+    margin-left: 1px;
 }
 .navbar{
     display: flex;
