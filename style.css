@@ -10,6 +10,9 @@ ul{
     margin: 10px;
     list-style: none;
 }
+.navbar li a:hover{
+    background-color: aquamarine;
+}
 #how{
     border: 1px solid rgb(200, 55, 6);
 }
