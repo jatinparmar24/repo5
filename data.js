@@ -148,8 +148,11 @@ function numbers(){
 
  //Q-8
 
+ let num=1;
 
- 
+ while(num<=10);
+ console.log("num")
+
 
 }
 
