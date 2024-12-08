@@ -96,15 +96,28 @@ function numbers(){
   // let ans2= confirm("have u got the certificate")
   // alert(ans && ans2)
 
-  let ans= confirm("Have u complete your course")
-  let ans2= confirm("have u got the certificate")
+  //let ans= confirm("Have u complete your course")
+  //let ans2= confirm("have u got the certificate")
 
-  if(ans==true && ans2== true){
-    alert("completed")
-  }
-  else{
-    alert(" not completed")
-  }
+  //if(ans==true && ans2== true){
+    //alert("completed")
+  //}
+  //else{
+   // alert(" not completed")
+ // }
+
+ //Q-3
+
+ //let price= prompt("What is the price of this item")
+ //let dis=confirm("Do you have discount coupen")
+ //if(dis==true){
+ // alert("price*10%")
+ //}
+
+// let ans= prompt("What is your percentage")
+
+ //ans>=33? alert("passed"):alert("failed")
+ 
 
 
 
