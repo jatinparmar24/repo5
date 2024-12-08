@@ -114,13 +114,43 @@ function numbers(){
  // alert("price*10%")
  //}
 
+ //Q-4
+
 // let ans= prompt("What is your percentage")
 
  //ans>=33? alert("passed"):alert("failed")
+
+ //Q-6
+
+ //let ans= confirm("Are you sure to delete")
+ 
+ //ans==true? alert("item Deleted"):alert("Cancelled")
+
+ //Q-5
+
+// let ans= prompt("Enter Number")
+ //if(ans%2==0){
+ // alert("Even")
+ //}
+ //else{
+ // alert("Odd")
+ //}
+
+ //Q-7
+
+ //let ans= prompt("Enter Number")
+ //if(ans>=0){
+ // alert("Positive")
+ //}
+ //else{
+ // alert("Negative")
+ //}
+
+ //Q-8
+
+
  
 
-
-
- }
+}
 
 numbers()
