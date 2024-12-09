@@ -158,7 +158,7 @@ function numbers(){
 
   //Q-9
 
- let num;
+ //let num;
 
  //do{
  //  prompt("Enter Number")
@@ -198,15 +198,13 @@ function numbers(){
  
 //Q-10 with switch case
 
-let day= prompt("Enter Between 1 to 7")
-switch(day==1){
-  case 0 : alert("Monday");
-}
-switch(day==2){
-  case 1 : alert ("Tuesday");
-}
-
-
+//let day= prompt("Enter Between 1 to 7")
+//switch(day==1){
+//  case 0 : alert("Monday");
+//}
+//switch(day==2){
+//  case 1 : alert ("Tuesday");
+//
 
 
 }
