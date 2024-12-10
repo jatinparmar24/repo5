@@ -1,12 +1,17 @@
   function okk(){
    // alert("Hello World")
 
-  // let text= "This is String"
+   let text= "This is String"
 
    //alert(text)
   // alert(text.length)
   // document.write(text.length) to print on body
-  //document.write(text.slice(2,9)) last digit is minus 1 always in slice
+  // document.write(text.slice(2,9)) last digit is minus 1 always in slice
+ // document.write(text.toUpperCase())
+ // document.write(text.toLowerCase())
+ // document.write(text.charCodeAt(1))
+  //  document.write(text.split())
+   //   document.write(text.indexOf(1,4))
 
 
 
@@ -23,8 +28,8 @@
  // document.write(text.concat(" "+text2)) " "+ to add additional space
 
 
- let text= "   this    "
- //document.write(text.trim().length) one mwthod
+ //let text= "   this    "
+ //document.write(text.trim().length) one method
 
 
 
