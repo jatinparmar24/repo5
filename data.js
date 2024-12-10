@@ -158,15 +158,14 @@ function numbers(){
 
   //Q-9
 
- //let num;
+ // let ans ;
 
- //do{
- //  prompt("Enter Number")
+// do{
+ // ans= prompt("Enter Number")
    
- //}
-// while(num>=10);{
-// alert("Greater")
 // }
+// while(ans<=10)
+ 
 
  //Q-10 with if else
 

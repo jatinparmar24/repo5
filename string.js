@@ -1,7 +1,7 @@
   function okk(){
    // alert("Hello World")
 
-   let text= "This is String"
+   // let text= "This is String"
 
    //alert(text)
   // alert(text.length)
@@ -11,7 +11,21 @@
  // document.write(text.toLowerCase())
  // document.write(text.charCodeAt(1))
   //  document.write(text.split())
-   //   document.write(text.indexOf(1,4))
+   //  document.write(text.indexOf()) used with string ?
+
+
+   let text= "The java and mern Java and javascript is fun";
+
+   // let ans = text.replace("java","hello") only first java of string
+   // let ans = text.replaceAll("java","hello") replace all java written
+   //let ans = text.replace(/java/g,"hello") for globle change
+  // let ans = text.replace(/java/i,"hello") for  case in sesitive
+  // let ans = text.replace(/java/ig,"hello") for globle and case in sesitive
+
+   // document.write(ans)
+
+   
+
 
 
 
