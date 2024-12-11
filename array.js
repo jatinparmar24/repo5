@@ -31,6 +31,26 @@ function okk(){
 // let ans= fruits.unshift("Oranges") 
 // document.write(ans)
  //document.write(fruits)
+ //console.log(fruits)
+
+
+
+ // short method gives data in accending order
+
+ let arr= [4,7,3,9,2,6,1]
+ //let ans =arr.sort()
+ //document.write(ans)
+
+ // in reverse order
+ //let ans= arr.reverse()
+ //document.write(ans)
+
+ 
+
+ //decending order
+
+ //let ans= arr.sort().reverse()
+ //document.write(ans)
 
  
 }
