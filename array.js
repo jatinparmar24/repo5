@@ -61,6 +61,30 @@ function okk(){
 // ans.sort()
  //document.write(ans)
 
+ // let ar1= [1,33,5,17,9]
+ // let ar2= [2,4,64,8]
+ // let ans=ar1.sort( (a,b) =>a-b )   sort with correct order 
+
+ // let ans=ar1.sort( (a,b) =>b-a )   reverse with descending order in correct way
+ // document.write(ans)
+
+
+
+//=====slice=======
+
+ let a=[2,4,7,9,1,3,4]
+
+ //let ans=a.slice(0,6)
+ //let ans=a.slice(0,-6)  //  remove from last
+// document.write(ans)
+
+// a.splice(2,2,14,20)  (starting positon ,    how many number should be deleted,   what to add or how many to add)
+// document.write(a)
+
+
+
+
+
  
 }
 
@@ -69,7 +93,8 @@ function okk(){
 function start(){
 
     let show= document.getElementById("text")
-    show.textContent=("Yes it comes")
+  //  show.textContent=("Yes it comes") changes only content
+  show.innerHTML="<h2>Yes it comes</h2>"
     show.style.color="blue"
 
 
