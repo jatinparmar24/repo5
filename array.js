@@ -78,14 +78,27 @@ function okk(){
  //let ans=a.slice(0,-6)  //  remove from last
 // document.write(ans)
 
+
+// =======splice=========
+
 // a.splice(2,2,14,20)  (starting positon ,    how many number should be deleted,   what to add or how many to add)
 // document.write(a)
 
 
+//=======map============ to perforn specific method to specific numor alpha bet 
+
+//let ans=a.map(function(num){
+ //  return num*2
+//})
+//let ans=a.map(function(b){
+ // return b+3
+// })
 
 
+//==with arrow function
+ //let ans=a.map((num)=>num*2)  used with arrow function
 
- 
+ // document.write(ans)
 }
 
 //pick id in js
@@ -97,5 +110,12 @@ function start(){
   show.innerHTML="<h2>Yes it comes</h2>"
     show.style.color="blue"
 
+
+}
+
+//======arrow function==========
+// its a one line code 
+
+const go=()=>{
 
 }
