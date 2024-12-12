@@ -99,6 +99,33 @@ function okk(){
  //let ans=a.map((num)=>num*2)  used with arrow function
 
  // document.write(ans)
+
+
+
+ // ======= filter======
+
+ // let ans=a.filter((num)=>num>3)
+//  let ans=a.filter((num)=>num%2==0)  gives even number
+ // let ans=a.filter((num)=>num%2!==0)  odd number
+ // document.write(ans)
+
+
+ // ========== for each=========  not return array but string
+
+
+// a.forEach((num)=>{
+ // document.write(num*2)
+// })
+
+//=====for of====== return string
+
+// for(let num of a ){
+//  document.write(num);
+// }
+
+
+  
+
 }
 
 //pick id in js
@@ -116,6 +143,6 @@ function start(){
 //======arrow function==========
 // its a one line code 
 
-const go=()=>{
+// const go=()=>{
 
-}
+// }
