@@ -20,3 +20,24 @@ let yellow=()=>{
     des.style.backgroundColor="yellow"
     des.style.borderRadius="90px"
 }
+
+let green=()=>{
+
+    let des= document.querySelector("#box1")
+    des.style.backgroundColor="green"
+    des.style.borderRadius="0%"
+}
+
+let aqua=()=>{
+
+    let des= document.querySelector("#box1")
+    des.style.backgroundColor="aqua"
+    des.style.borderRadius="100%"
+}
+
+let purple=()=>{
+
+    let des= document.querySelector("#box1")
+    des.style.backgroundColor="purple"
+    des.style.borderRadius="90px"
+}

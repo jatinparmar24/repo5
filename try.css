@@ -18,3 +18,18 @@ button{
 #yellow{
     background-color: yellow;
 }
+
+#box1{
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+}
+#green{
+    background-color: green;
+}
+#aqua{
+    background-color: aqua;
+}
+#purple{
+    background-color: purple;
+}
