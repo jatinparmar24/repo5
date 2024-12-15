@@ -74,9 +74,9 @@ function okk(){
 
  let a=[2,4,7,9,1,3,4]
 
- //let ans=a.slice(0,6)
+// let ans=a.slice(1,6)
  //let ans=a.slice(0,-6)  //  remove from last
-// document.write(ans)
+ //document.write(ans)
 
 
 // =======splice=========

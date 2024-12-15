@@ -47,7 +47,7 @@
     // let ans3= prompt("Enter Favorite Fruit 3 ")
 
     // let array=[ans1,ans2,ans3]
-    // alert("Your favorite Fruits are: + array")
+    // alert("Your favorite Fruits are:" +([array]))
 
      // q-5
 

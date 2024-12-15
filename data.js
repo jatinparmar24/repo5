@@ -19,6 +19,7 @@
 //    // window.alert(parseInt(ans*as))
 //    // window.alert(parseInt(ans/as))
 
+
 //   let as1 = window.confirm("Are U happy with this website")
 
 //   if(as1==true){
@@ -63,7 +64,7 @@ function numbers(){
   // conditon ? "true":"false"
 
   // let age=18;
-  // let ans = age>18 ? "younger":"elder";
+  // let ans = age<18 ? "younger":"elder";
   // alert(ans)
 
 

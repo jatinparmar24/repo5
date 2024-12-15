@@ -33,7 +33,7 @@
   // document.write(text.slice(2,9)) last digit is minus 1 always in slice
  // document.write(text.toUpperCase())
  // document.write(text.toLowerCase())
- // document.write(text.charCodeAt(1)) 
+ // document.write(text.charCodeAt(1)) ascii value
    //  document.write(text.indexOf()) used with string ?
 
           // ========== split ========
@@ -56,7 +56,7 @@
 
    
  // let text= "This"  index value starts from zero
-  // document.write(text.charAt(2))  (2) it is index
+  // document.write(text.charAt(2))  (2) it is index value
 
 
   //let text= "This is an Cybrom"
