@@ -10,14 +10,13 @@
     justify-content: space-between;
     text-align: center;
     gap: 250px;
-    /* background-color: aqua; */
     position: fixed;
 }
 #navbar nav ul{
     width: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 120px;
+    gap: 130px;
     list-style: none;
 }
 #navbar nav ul li a{
@@ -43,7 +42,7 @@ button{
     background-repeat: no-repeat;
 }
 #sec1 h1{
-    font-size: 40px;
+    font-size: 42px;
 }
 #sec1 .div1{
     display: flex;
