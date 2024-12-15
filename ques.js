@@ -34,6 +34,37 @@
 
     // q-4
 
+     // let num;
+     //  for(num=1; num<=10; num++)
+     //  console.log(num)
+
+     // q-4
+
+     //q-5
+
+    // let ans1= prompt("Enter Favorite Fruit 1 ")
+    // let ans2= prompt("Enter Favorite Fruit 2 ")
+    // let ans3= prompt("Enter Favorite Fruit 3 ")
+
+    // let array=[ans1,ans2,ans3]
+    // alert("Your favorite Fruits are: + array")
+
+     // q-5
+
+     //q-7
+
+      let arr= [10,20,30,40,50];
+      
+
+
+     //q-7
+
+
+
+
+
+    
+
 
 
 
