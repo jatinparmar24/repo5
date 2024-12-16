@@ -3,7 +3,7 @@
     padding: 0px;
 }
 ul{
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 .navbar li a{
     text-decoration: none;
@@ -12,7 +12,7 @@ ul{
     list-style: none;
 }
 .navbar li a:hover{
-    background-color: aqua;
+    background-color: aquamarine;
 }
 #how{
     border: 1px solid rgb(200, 55, 6);
@@ -21,7 +21,7 @@ ul{
 #that{
     border: 1px solid blue;
     background-color: aqua;
-    margin-left: 1px;
+    margin-left: 2px;
     font-size: 25px;
 }
 .navbar{
@@ -30,7 +30,7 @@ ul{
     /* flex-wrap: wrap; */
 }
 #maindiv .box{
-    width: 200px;
+    width: 210px;
     height: 200px;
     border: 1px solid lightskyblue;
 
