@@ -9,6 +9,7 @@ function okk(){
 
 
   //pop removes last element of an array
+
    //let ans=fruits.pop()
    // have to use pop again to remove second element
  //  document.write(ans) it stores pop means last one which it removes
@@ -85,7 +86,7 @@ function okk(){
 // document.write(a)
 
 
-//=======map============ to perforn specific method to specific numor alpha bet 
+//=======map============ to perforn specific method to specific number, alpha bet 
 
 //let ans=a.map(function(num){
  //  return num*2

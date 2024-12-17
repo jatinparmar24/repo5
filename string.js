@@ -19,7 +19,7 @@
      // template laterals ends here 
 
 
-      //  let click= "The word is <br> in given"           used br tag to change line
+      //  let click= "The word is <br> in given"       //    used br tag to change line
     //  document.write(click)
 
 
@@ -45,11 +45,11 @@
 
    // let text= "The java and mern Java and javascript is fun";
 
-   // let ans = text.replace("java","hello") only first java of string
-   // let ans = text.replaceAll("java","hello") replace all java written
-   //let ans = text.replace(/java/g,"hello") for globle change
-  // let ans = text.replace(/java/i,"hello") for  case in sesitive
-  // let ans = text.replace(/java/ig,"hello") for globle and case in sesitive
+   // let ans = text.replace("java","hello")    // only first java of string
+   // let ans = text.replaceAll("java","hello")   // replace all java written
+   //let ans = text.replace(/java/g,"hello")  //   for globle change
+  // let ans = text.replace(/java/i,"hello")    //  for  case in sesitive
+  // let ans = text.replace(/java/ig,"hello")    //  for globle and case in sesitive
 
    // document.write(ans)
 
