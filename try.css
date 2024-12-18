@@ -1,12 +1,12 @@
 
 #flex{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
 #box{
-    width: 450px;
+    width: 550px;
     height: 300px;
     border: 1px solid black;
 }
@@ -20,23 +20,23 @@ button{
     background-color: red;
     position: relative;
     top: 330px;
-    left: -300px;
+    left: -250px;
 }
 #blue{
     background-color: blue;
      position: relative;
      top: 330px;
-    left: -300px;
+    left: -250px;
 }
 #yellow{
     background-color: yellow;
      position: relative;
      top: 330px;
-    left: -300px;
+    left: -250px;
 }
 
 #box1{
-    width: 450px;
+    width: 550px;
     height: 300px;
     border: 1px solid black;
     
@@ -46,23 +46,30 @@ button{
     background-color: green;
      position: relative;
      top: 330px;
-    left: -300px;
+    left: -250px;
 }
 #aqua{
     background-color: aqua;
      position: relative;
      top: 330px;
-    left: -300px;
+    left: -250px;
 }
 #purple{
     background-color: purple;
      position: relative;
      top: 330px;
-    left: -300px;
+    left: -250px;
 }
 
 #image{
-    width: 450px;
+    width: 550px;
     height: 300px;
     border: 1px solid black;
+}
+img{
+    width: 70px;
+    height: 50px;
+    position: relative;
+    top: 330px;
+    left: -250px;
 }

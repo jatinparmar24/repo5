@@ -41,3 +41,18 @@ let purple=()=>{
     des.style.backgroundColor="purple"
     des.style.borderRadius="90px"
 }
+
+let first=()=>{
+    let des= document.querySelector("#image")
+    des.style.backgroundImage="url(dest1.jpg)";
+}
+
+let second=()=>{
+    let des= document.querySelector("#image")
+    des.style.backgroundImage="url(dest2.jpg)";
+}
+
+let third=()=>{
+    let des= document.querySelector("#image")
+    des.style.backgroundImage="url(dest3.jpg)";
+}
