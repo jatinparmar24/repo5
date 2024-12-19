@@ -43,16 +43,20 @@ let purple=()=>{
 }
 
 let first=()=>{
+    
+  
     let des= document.querySelector("#image")
-    des.style.backgroundImage="url(dest1.jpg)";
+    des.style.backgroundImage="url('image/dest1.jpg')";
+    des.style.backgroundSize="contain";
 }
 
 let second=()=>{
     let des= document.querySelector("#image")
-    des.style.backgroundImage="url(dest2.jpg)";
+    des.style.backgroundImage="url(image/dest2.jpg)"
 }
 
 let third=()=>{
     let des= document.querySelector("#image")
-    des.style.backgroundImage="url(dest3.jpg)";
+    des.style.backgroundImage="url(image/dest3.jpg)"
+
 }
