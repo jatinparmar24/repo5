@@ -50,6 +50,11 @@ let first=()=>{
     des.style.backgroundSize="contain";
 }
 
+let first1=()=>{
+    let des= document.querySelector("#image")
+    des.src="url('image/dest3.jpg')";
+}
+
 let second=()=>{
     let des= document.querySelector("#image")
     des.style.backgroundImage="url(image/dest2.jpg)"
