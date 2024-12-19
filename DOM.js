@@ -6,14 +6,32 @@ let go=()=>{
     show.style.fontSize="40px";
 }
 
+
+let counter=0;
 let add=()=>{
-    let show=document.querySelector("#in")
-    show.innerHTML=1;
+     counter++;
+    let show=document.querySelector("#in");
+    show.innerHTML=counter;
+    
 }
-let sub=()=>{
+
+
+let sub=()=>{   
     let show=document.querySelector("#in")
-    show.innerHTML=-1;
+    if(counter>0){
+      counter--;
+    }
+    show.innerHTML=counter;
 }
+
+let zero=()=>{
+    counter=0;
+    let show=document.querySelector("#in");
+    show.innerHTML=counter;
+
+}
+
+
 
 // we can get img direct if given in div to convert it into background image so we get that image byt its id
 
@@ -27,5 +45,5 @@ let sub=()=>{
   let rot2=()=>{
     let show=document.querySelector("#rotate")
     show.style.background="blue";
-    show.style.borderRadius="80px"
+    show.style.borderRadius="60px"
   }
