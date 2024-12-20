@@ -33,17 +33,17 @@ let zero=()=>{
 
 
 
-// we can get img direct if given in div to convert it into background image so we get that image byt its id
+// we can get img direct if given in div to convert it into background image so we get that image byt its id   by using "src" in js
 
   let rot1=()=>{
     let show=document.querySelector("#rotate")
     show.style.background="red";
-    show.style.borderRadius="100%";
-    show.style.rotate="100deg"
+    show.style.borderRadius="70px";
+    show.style.rotate="200deg"
   }
 
   let rot2=()=>{
     let show=document.querySelector("#rotate")
     show.style.background="blue";
-    show.style.borderRadius="60px"
+    show.style.borderRadius="100%"
   }
