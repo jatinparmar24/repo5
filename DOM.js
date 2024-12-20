@@ -85,3 +85,8 @@ let zero=()=>{
     let mann=document.querySelector("#wordd")
     mann.innerHTML=mean;
   }
+
+  let alrt=()=>{
+    let deem=document.querySelector("#asd")
+    deem.innerHTML="How U Do It"
+  }
