@@ -19,7 +19,13 @@
         #box{
             width: 150px;
             height: 150px;
-            border: 1px solid black; 
+            border: 1px solid black;
+            background-color: aqua; 
+        }
+
+        .hidden{
+            display: none;
+        
         }
     </style>
 </head>
@@ -37,7 +43,14 @@
 <div id="rotate"  onmouseenter="rot1()" onmouseleave="rot2()"></div>
 
     <div id="box"></div> <br>
-    <button onclick="openn()">Open/Close</button>
+    <button onclick="openn()">Open/Close</button> <br>
+
+    <p id="outi">Hello World</p>
+<button onclick="upp()">Increament</button>
+<button onclick="loww()">Decreament</button> <br>
+
+<p id="wordd">hi</p>
+<input type="text" id="saww"> <button onclick="works()">Click To Change</button>
 
     <script src="DOM.js"></script>
 </body>

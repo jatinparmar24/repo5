@@ -49,11 +49,39 @@ let zero=()=>{
   }
 
   let openn=()=>{
-    let hidee=document.querySelector("#box")
-    if(hidee.style.display=="none"){
-      hidee.style.display="block"
-    }
-    else{
-      hidee.style.display="none"
-    }
+     let hidee=document.querySelector("#box")
+     if(hidee.style.display=="none"){
+       hidee.style.display="block"
+     }
+     else{
+       hidee.style.display="none"
+     }
+   }
+
+
+  // toggle property  only uses for hide or do none things
+   
+   //let openn=()=>{
+   //  let hidee=document.querySelector("#box")
+    // hidee.classList.toggle('hidden')
+  // }
+
+  let count=16;
+
+  let upp=()=>{
+    let diss= document.querySelector("#outi")
+    count++;   // it can be written in that way also  count=count*2;
+    diss.style.fontSize=count+"px";
+  }
+
+  let loww=()=>{
+    let diss= document.querySelector("#outi")
+    count--;
+    diss.style.fontSize=count+"px";
+  }
+
+  let works=()=>{
+    let mean=document.querySelector("#saww").value;    // to take the information of input tag we use . value at end
+    let mann=document.querySelector("#wordd")
+    mann.innerHTML=mean;
   }
