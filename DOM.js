@@ -47,3 +47,13 @@ let zero=()=>{
     show.style.background="blue";
     show.style.borderRadius="100%"
   }
+
+  let openn=()=>{
+    let hidee=document.querySelector("#box")
+    if(hidee.style.display=="none"){
+      hidee.style.display="block"
+    }
+    else{
+      hidee.style.display="none"
+    }
+  }

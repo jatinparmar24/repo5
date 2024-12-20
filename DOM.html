@@ -14,8 +14,12 @@
             position: relative;
             top: 50%;
             left: 40%;
-    
+        }
 
+        #box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black; 
         }
     </style>
 </head>
@@ -31,6 +35,9 @@
 
 
 <div id="rotate"  onmouseenter="rot1()" onmouseleave="rot2()"></div>
+
+    <div id="box"></div> <br>
+    <button onclick="openn()">Open/Close</button>
 
     <script src="DOM.js"></script>
 </body>
