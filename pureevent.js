@@ -15,6 +15,7 @@ btn.addEventListener("click",()=>{      // use doubleclick so write dblclick in 
  //   console.log(e.key)
 // })
 
+
 let inp=document.querySelector("#inp")
 
 inp.addEventListener("input",()=>{
@@ -50,3 +51,12 @@ show2.addEventListener("click",()=>{
     des.style.backgroundColor="yellow"
 })
 
+
+let show3=document.querySelector("#rees")
+show3.addEventListener("click",()=>{
+    let show4=document.querySelector("#seer")
+    show4.style.display="none";
+    show3.innerHTML="Show";
+    
+    
+})
