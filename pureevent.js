@@ -21,10 +21,32 @@ inp.addEventListener("input",()=>{
     console.log(inp.value)
 })
 
+
+
+
 let werte=document.querySelector("#tire")
 
 werte.addEventListener("input",()=>{
 
-    let show=document.querySelector("wert")
-    wert.innerHTML=tire.value
+    let show=document.querySelector("#wert")
+    show.innerHTML=werte.value
 })
+
+let show=document.querySelector("#red")
+show.addEventListener("click",()=>{
+    let des=document.querySelector("#box")
+    des.style.backgroundColor="red"
+})
+
+let show1=document.querySelector("#blue")
+show1.addEventListener("click",()=>{
+    let des=document.querySelector("#box")
+    des.style.backgroundColor="blue"
+})
+
+let show2=document.querySelector("#yellow")
+show2.addEventListener("click",()=>{
+    let des=document.querySelector("#box")
+    des.style.backgroundColor="yellow"
+})
+
