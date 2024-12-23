@@ -55,6 +55,14 @@ show2.addEventListener("click",()=>{
 let show3=document.querySelector("#rees")
 show3.addEventListener("click",()=>{
     let show4=document.querySelector("#seer")
-    show4.style.display="none";
-    show3.innerHTML="Show";  
+    if(show4.style.display=="none"){
+        show4.style.display="block"
+    }
+    else{
+        show4.style.display="none";
+        show3.innerHTML="Show"
+    }
+    
+
+
 })

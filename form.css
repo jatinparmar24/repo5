@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#formbox{
+    width: 750px;
+    height: 800px;
+    border: 1px solid black;
+    position: absolute;
+    left: 23%;
+    top: 2%;
+}
+
