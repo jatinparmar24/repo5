@@ -32,7 +32,7 @@ ul{
 #maindiv .box{
     width: 210px;
     height: 210px;
-    border: 1px solid rgb(22, 138, 210);
+    border: 2px solid rgb(22, 138, 210);
 
 }
 #maindiv{
@@ -44,9 +44,9 @@ ul{
     border: 1px;
     width: 300px;
     height: 300px;
-    border: solid rgb(110, 6, 6);
+    border: solid rgb(238, 4, 4);
     background-color: rgb(11, 248, 248);
-    margin-left: 51%;
+    margin-left: 50%;
     border-radius: 100%;
 }
 #pic{

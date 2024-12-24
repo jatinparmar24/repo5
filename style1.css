@@ -28,7 +28,7 @@
     border-radius: 60px;
 }
 button{
-    border-radius: 60px;
+    border-radius: 70px;
     box-shadow: 20px;
     background-color: chartreuse;
 }
@@ -42,7 +42,7 @@ button{
     background-repeat: no-repeat;
 }
 #sec1 h1{
-    font-size: 42px;
+    font-size: 40px;
 }
 #sec1 .div1{
     display: flex;
