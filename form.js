@@ -33,7 +33,7 @@
       return false;
 
      }
-     else if(isNaN(num)){
+     else if(isNaN(num)){                    //  isNaN = is not a number=== it checks that that it has number or not
         errnum.innerHTML="please enter digits only";
          errnum.style.color="red";
         errnum.style.fontSize="30px"
@@ -53,6 +53,11 @@
         return false;
      }
 
+     else if(!(email.includes("@") && email.includes(".com"))){    // includes checks that it is present or not====
+      erremail.innerHTML="please enter valid email";
+      return false;
+     }
+
      else if(pass===""){
       errpass.innerHTML="please enter your password";
       errpass.style.color="red";
@@ -68,9 +73,15 @@
    }
 
    else if(pass!==cpass){
-      errcpass.innerHTML="please confirm your c password";
+      errcpass.innerHTML="password and confirm password should be shame";
       return false;
+   }
 
+   else if(!(
+      pass.match(/[1234567890]/) && pass.match(/[!@#$%^&*()]/) && pass.match(/[a-z]/) && pass.match(/[A-Z]/)
+   )){
+      errpass.innerHTML="Password should have num,symbol,capitaland small number also";
+      return false;
    }
 
 

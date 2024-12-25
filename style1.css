@@ -30,7 +30,7 @@
 button{
     border-radius: 70px;
     box-shadow: 20px;
-    background-color: chartreuse;
+    background-color: rgb(131, 249, 13);
 }
     /* Main section starts from here  */
 #sec1{
@@ -42,7 +42,7 @@ button{
     background-repeat: no-repeat;
 }
 #sec1 h1{
-    font-size: 40px;
+    font-size: 30px;
 }
 #sec1 .div1{
     display: flex;
