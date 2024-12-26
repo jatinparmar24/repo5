@@ -73,3 +73,27 @@ console.log(obj)          // update after email add
  console.log(combinearry)
  
 
+
+ // array of Object ==========
+
+ let student=[
+   {name:"jatin",age:23},
+   {name:"raj",age:24},
+   {name:"vijay",age:25}
+ ]
+
+ // let newarr=student.map((e)=>{
+ //  return e.age+1;
+// })
+
+ // console.log(newarr)
+
+
+// let newfil=student.filter((e)=>{
+ //  return e.age>23;
+// })
+
+ // console.log(newfil);
+
+
+ 

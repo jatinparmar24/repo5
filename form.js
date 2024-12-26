@@ -26,6 +26,15 @@
         return false;
      }
 
+     else if(!(
+    name.match(/[A-Z]/) && name.match(/[a-z]/)
+     )){
+      errname.innerHTML="Name should have Capital and Small number also";
+       errname.style.color="red";
+      errname.style.fontSize="30px"
+      return false;
+   }
+
      else if(num===""){
       errnum.innerHTML="please enter digits";
       errnum.style.color="red";
@@ -80,7 +89,7 @@
    else if(!(
       pass.match(/[1234567890]/) && pass.match(/[!@#$%^&*()]/) && pass.match(/[a-z]/) && pass.match(/[A-Z]/)
    )){
-      errpass.innerHTML="Password should have num,symbol,capitaland small number also";
+      errpass.innerHTML="Password should have num,symbol,capital and small number also";
       return false;
    }
 
