@@ -85,15 +85,55 @@ console.log(obj)          // update after email add
  // let newarr=student.map((e)=>{
  //  return e.age+1;
 // })
-
  // console.log(newarr)
 
 
 // let newfil=student.filter((e)=>{
  //  return e.age>23;
 // })
-
  // console.log(newfil);
+
+ 
+ // let newforeach= student.forEach((e)=>{
+ //  console.log(e.name);
+ // })
+
+
+ //   there are four types of function present=====
+ // 1-- normal function===\
+
+ // function num(){
+ // }
+
+ // 2--- arrow function=====\
+ // let num()=>{
+  // }
+
+  // 3--     anonymus function============ no names given thats why it is called as anonymus
+
+  // let hh1=function(){
+  //  console.log("anonymus function");
+  //}
+   // hh1();
+
+   //  special type of anonymus function====
+
+   // let newrr=()=>{
+    // console.log("hi");
+    //}
+    // newrr();
+
+    // 4-- IIFE (Immediately Invoked Function Expression)   call on real time
+
+    // function(){
+    // console.log("IIFE function");
+    
+    // }
+    // ();   function called
+
+
+ 
+ 
 
 
  
