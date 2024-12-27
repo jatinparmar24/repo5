@@ -94,12 +94,40 @@
    }
 
 
-
-
-
-
-
-
-
-
    }
+
+
+   
+let student=[
+   {name:"jatin",age:23 , city:"Sehore"},
+   {name:"raj",age:24 , city:"Bhopal"},
+   {name:"vijay",age:25 , city:"Dewas"}
+ ]
+
+ let output=document.querySelector("#tablebox")
+ student.forEach((e)=>{
+
+ output.innerHTML+=
+ `
+  <tr>
+  
+ <td>${e.name}</td>
+ <td>${e.age}</td>
+ <td>${e.city}</td>
+
+ </tr>
+ 
+   `
+
+ })
+
+
+
+
+
+
+
+
+
+
+   
