@@ -1,0 +1,9 @@
+table{
+    background-color: aquamarine;
+}
+table td{
+    color: red;
+}
+table td:hover{
+    border-radius: 90px;
+}
