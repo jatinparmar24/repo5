@@ -1,9 +1,19 @@
+
+
+
+
 table{
-    background-color: aquamarine;
+    background-color: rgba(3, 235, 158, 0.696);
+    border-radius: 10px;
 }
 table td{
     color: red;
+    background-color: yellow;
+    border: 2px solid red;
+
 }
 table td:hover{
-    border-radius: 90px;
+    border-radius: 80px;
+    color: red;
+    background-color: black;
 }

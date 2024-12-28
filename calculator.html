@@ -8,17 +8,19 @@
 </head>
 <body>
 
+    <h1>Calculator</h1>
+
     <div>
 
-        <table border="2" align="center" cellspacing="25px" cellpadding="15px">
+        <table border="3" align="center" cellspacing="25px" cellpadding="15px">
            
             <tr>
                 <td id="display" colspan="4" ></td>
             </tr>
 
             <tr>
-                <td>AC</td>
-                <td>Del</td>
+                <td onclick="allc()">AC</td>
+                <td onclick="del()">Del</td>
                 <td onclick="cal('/')">/</td>
                 <td onclick="cal('%')">%</td>
             </tr>
@@ -49,6 +51,10 @@
                 <td onclick="cal('0')">0</td>
                 <td onclick="cal('.')">.</td>
                 <td onclick="result()">=/Enter</td>
+            </tr>
+
+            <tr>
+                <td onclick="squ()">Square</td>
             </tr>
 
 

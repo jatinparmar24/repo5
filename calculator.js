@@ -18,3 +18,26 @@ store=eval(store)    // result is number like 3
 store.toString()  // it change number into string
 
 }
+
+let del=()=>{
+
+    let show=document.querySelector("#display")
+    store=store.slice(0,-1)
+    show.innerHTML=store;
+
+}
+
+let allc=()=>{
+  
+    let show=document.querySelector("#display")
+    store="";
+    show.innerHTML=store;
+    
+}
+
+let squ=()=>{
+    let show=document.querySelector("#display")
+    store=store*store;
+    show.innerHTML=store;
+    
+}
