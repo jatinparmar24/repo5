@@ -3,17 +3,19 @@
 
 
 table{
-    background-color: rgba(31, 219, 156, 0.696);
+    background-color: aquamarine;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px grey;
 }
 table td{
     color: red;
-    background-color: yellow;
+    background-color: paleturquoise;
     border: 2px solid red;
+    box-shadow: 10px 5px 10px 10px grey;
 
 }
 table td:hover{
     border-radius: 80px;
     color: red;
-    background-color: black;
+    background-color: white;
 }
