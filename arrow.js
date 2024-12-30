@@ -1,8 +1,8 @@
- // let go=(a)=>{
+ let go=(a)=>{
   
- //  return document.write("hello"+a)
+  return document.write("hello"+a)
 
- // }
+ }
 
  //let arr= [3,2,5,6,7,8]
 

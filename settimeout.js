@@ -5,7 +5,7 @@
 
  //   setTimeout(()=>{
  //       console.log("I Am Running");  
-  //  },2000)
+  //  },2000)   // takes 2 secdond to show the result
 // )
 
 
@@ -38,7 +38,7 @@
 
  //   setInterval(() => {
  //       console.log("I AM Running");
- //   },3000);
+ //   },3000);   // works after every 3 seconds
     
 // }
 
@@ -67,14 +67,14 @@
 
 // reverse number
 
- let incr=()=>{
-    let counter=10;
-    setInterval(()=>{
-        let show=document.querySelector("#addd")
-      show.innerHTML=counter
-      counter--;
-    },1000)
- }
+//  let incr=()=>{
+//     let counter=10;
+//     setInterval(()=>{
+//         let show=document.querySelector("#addd")
+//       show.innerHTML=counter
+//       counter--;
+//     },1000)
+//  }
 
 
  // stop interval with clearinterval
@@ -86,5 +86,4 @@
  let startt=()=>{
     clearInterval(ints)     // it stops when button is clicked
  }
-
 

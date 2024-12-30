@@ -5,7 +5,7 @@ function okk(){
     let fruits=["Apple","Mango","Grapes","Banana"]
 
    // let ans=fruits.length;
-   // document.write(ans)
+   // document.write(ans)  4
 
 
   //pop removes last element of an array
@@ -13,19 +13,19 @@ function okk(){
    //let ans=fruits.pop()
    // have to use pop again to remove second element
  //  document.write(ans) it stores pop means last one which it removes
- //  document.write(fruits) it store what reamin after pop
+ //  document.write(fruits) it store what remain after pop
 
  // shift it removes starting element
 
- //let ans= fruits.shift()
- //document.write(ans) gives index number
- //document.write(fruits) adds new one
+ // let ans= fruits.shift()
+ // document.write(ans)// gives what it store or what it removes 
+ //document.write(fruits) shows what it remains after shifting
 
  //push adds the last element
 
  //let ans=fruits.push("Orange","Avocadra")
- //document.write(ans)
- //document.write(fruits)
+ //document.write(ans)  it has ("Orange","Avocadra")
+ //document.write(fruits) after push "Apple","Mango","Grapes","Banana" "Orange","Avocadra"
 
  // unshift adds an element in starting
 
@@ -40,9 +40,9 @@ function okk(){
 
  // short method gives data in accending order
 
- //let arr= [4,7,3,9,2,6,1]
- //let ans =arr.sort()
- //document.write(ans)
+//  let arr= [4,7,3,9,2,6,1]
+//  let ans =arr.sort()
+//  document.write(ans)   it gives 1,2,3,4,6,7,9
 
  // in reverse order
  //let ans= arr.reverse()

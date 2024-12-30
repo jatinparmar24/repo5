@@ -66,7 +66,7 @@ let zero=()=>{
     // hidee.classList.toggle('hidden')
   // }
 
-  let count=16;
+  let count=16;   // by defalut font dixe of text
 
   let upp=()=>{
     let diss= document.querySelector("#outi")

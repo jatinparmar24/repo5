@@ -20,7 +20,7 @@
 
      
      if(name===""){
-        errname.innerHTML="please enter your name";
+        errname.innerHTML="Please Enter Your Name";
         errname.style.color="red";
         errname.style.fontSize="30px"
         return false;
@@ -29,21 +29,21 @@
      else if(!(
     name.match(/[A-Z]/) && name.match(/[a-z]/)
      )){
-      errname.innerHTML="Name should have Capital and Small number also";
+      errname.innerHTML="Name should have Capital and Small Letters";
        errname.style.color="red";
       errname.style.fontSize="30px"
       return false;
    }
 
      else if(num===""){
-      errnum.innerHTML="please enter digits";
+      errnum.innerHTML="Please Enter Digits";
       errnum.style.color="red";
       errnum.style.fontSize="30px"
       return false;
 
      }
      else if(isNaN(num)){                    //  isNaN = is not a number=== it checks that that it has number or not
-        errnum.innerHTML="please enter digits only";
+        errnum.innerHTML="Please Enter Digits Only";
          errnum.style.color="red";
         errnum.style.fontSize="30px"
         return false;
@@ -82,7 +82,7 @@
    }
 
    else if(pass!==cpass){
-      errcpass.innerHTML="password and confirm password should be shame";
+      errcpass.innerHTML="password and confirm password should be same";
       return false;
    }
 
