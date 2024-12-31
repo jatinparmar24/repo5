@@ -79,11 +79,108 @@
 
  // stop interval with clearinterval
 
- let ints=setInterval(()=>{
-    console.log("Running"); 
- },1000)
+//  let ints=setInterval(()=>{
+//     console.log("Running"); 
+//  },1000)
 
- let startt=()=>{
-    clearInterval(ints)     // it stops when button is clicked
- }
+//  let startt=()=>{
+//     clearInterval(ints)     // it stops when button is clicked
+//  }
 
+
+  
+
+    // let result=document.querySelector("#auto")
+    // let counter=1;
+
+
+    // let a = setInterval(() => {
+    //   result.innerHTML=counter++
+    // }, 1000);
+
+    // setTimeout(()=>{
+    //       clearInterval(a)
+    // },6000)
+  
+
+  //   let isname=true;
+
+  //   setInterval(() => {
+  //     let show=document.querySelector("#text")
+  //   show.innerHTML=isname?"Jatin":"Parmar"                to show at title place just need to write ===== document.title in place of show.innerHTML
+  //   //  isname=!isname; //     it is true what we can do that with if else also
+
+
+  //   // either with isname=!isname   ======  or=======
+  //  //  or with if else
+
+  //   if(isname==true){
+  //     isname =false
+  //   }
+
+  //   else{
+  //     isname=true
+  //   }
+
+  //   }, 1000);
+
+
+
+     /// now to show in title   means to change its name
+
+     let isname=true;
+
+     setInterval(() => {
+       let show=document.querySelector("#text")
+     document.title=isname?"Jatin":"Parmar"
+     //  isname=!isname; //     it is true what we can do that with if else also
+ 
+ 
+     // either with isname=!isname   ======  or=======
+    //  or with if else
+ 
+     if(isname==true){
+       isname =false
+     }
+ 
+     else{
+       isname=true
+     }
+ 
+     }, 1000);
+
+
+     // timer    stops at =====  1
+
+    //  let timer=()=>{
+    //       let counter=6;
+    //     let inter  =setInterval(()=>{
+    //           let show=document.querySelector("#wert")
+    //         show.innerHTML=counter
+    //         counter--;
+
+    //         if(counter==0){
+    //           clearInterval(inter)
+    //         }
+    //       },1000)
+    //    }
+
+
+       //   stop watch
+
+       
+     let runn=()=>{
+      
+      let inp=document.querySelector("#timer").value
+
+    let inter  =setInterval(()=>{
+    
+       let display=document.querySelector("#text1")
+        display.innerHTML=inp
+        inp--;
+
+        if(inp==0){
+          clearInterval(inter)
+        }
+      },1000)
+   }
