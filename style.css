@@ -12,7 +12,7 @@ ul{
     list-style: none;
 }
 .navbar li a:hover{
-    background-color: aquamarine;
+    background-color: rgb(13, 248, 170);
 }
 #how{
     border: 1px solid rgb(200, 55, 6);
@@ -32,7 +32,7 @@ ul{
 #maindiv .box{
     width: 210px;
     height: 210px;
-    border: 2px solid rgb(38, 5, 104);
+    border: 2px solid rgba(95, 25, 234, 0.856);
 
 }
 #maindiv{
@@ -44,8 +44,8 @@ ul{
     border: 1px;
     width: 320px;
     height: 300px;
-    border: solid rgb(241, 32, 32);
-    background-color: rgb(11, 248, 248);
+    border: solid rgb(241, 5, 5);
+    background-color: rgb(24, 215, 215);
     margin-left: 50%;
     border-radius: 100%;
 }
