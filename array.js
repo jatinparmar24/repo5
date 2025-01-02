@@ -140,10 +140,3 @@ function start(){
 
 
 }
-
-//======arrow function==========
-// its a one line code 
-
-// const go=()=>{
-
-// }

@@ -12,6 +12,25 @@
             height: 200px;
             border: 1px solid black;
         }
+
+        #cent{
+            border: 1px solid black;
+            width: 120px;
+            border-radius: 100%;
+            background-color: aqua;
+        }
+
+        #midd{
+            position: absolute;
+            top: 8px;
+            left: 30%;
+        }
+        #gold{
+            color: chocolate;
+        }
+        #display{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -37,6 +56,14 @@
 
      <input type="number" id="timer">  <button onclick="runn()">Start</button>
      <h1 id="text1"></h1>
+
+     <div id="midd">
+
+        <h1 id="gold">Digital Clock</h1>
+
+        <div id="cent"><h1 id="display"></h1></div>
+
+     </div>
 
 
 
