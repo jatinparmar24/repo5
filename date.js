@@ -24,8 +24,21 @@
 
  // day== 
  let das=()=>{
-    let arr=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    let arr=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]    // in the same way we can get months also
     let tim= new Date();
     let show=document.querySelector("#dayy")
     show.innerHTML= arr[time.getDay()];
+ }
+
+ // age calculator
+
+ let agee=()=>{
+
+    let age=document.querySelector("#aga").value   // link input tag
+    let tim= new Date();
+    let result= tim.getFullYear()-age;
+    let show=document.querySelector("#show")   // link p tag
+    show.innerHTML=result
+
+
  }
