@@ -220,17 +220,13 @@
     setTimeout(() => {
       document.querySelector("#sing").pause()
       clearInterval(inter)
-    }, 6000);
+    }, 10000);
     }
 
     else{
       war.innerHTML="Alarm Set";
     }
   },1000)
-
-   
-
-
   }
 
 

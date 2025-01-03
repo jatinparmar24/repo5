@@ -1,0 +1,15 @@
+
+#squar{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+#mid{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+}
