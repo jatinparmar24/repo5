@@ -4,34 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="settimeout.css">
 
-    <style>
-
-        #red{
-            width: 200px;
-            height: 200px;
-            border: 1px solid black;
-        }
-
-        #cent{
-            border: 1px solid black;
-            width: 120px;
-            border-radius: 100%;
-            background-color: aqua;
-        }
-
-        #midd{
-            position: absolute;
-            top: 8px;
-            left: 30%;
-        }
-        #gold{
-            color: chocolate;
-        }
-        #display{
-            color: red;
-        }
-    </style>
+   
 </head>
 <body>
     
@@ -62,6 +37,14 @@
         <h1 id="gold">Digital Clock</h1>
 
         <div id="cent"><h1 id="display"></h1></div>
+
+     </div>
+
+     <div id="alarm">
+
+        <h1 id="gold1">Alarm Clock</h1>
+        <input type="time"  id="inp"> <button onclick="rune()">Set Alarm</button> <br>
+        <h2 id="shows"></h2>
 
      </div>
 

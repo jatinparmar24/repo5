@@ -46,14 +46,14 @@ function okk(){
 
  // in reverse order
  //let ans= arr.reverse()
- //document.write(ans)
+ //document.write(ans)  it gives 1,6,2,9,3,7,4
 
 
 
  //decending order
 
  //let ans= arr.sort().reverse()
- //document.write(ans)
+ //document.write(ans)  it gives 9,7,6,4,3,2,1
 
 // let ar1= [1,3,5,7,9]
  // let ar2= [2,4,6,8]
@@ -77,7 +77,7 @@ function okk(){
 
 // let ans=a.slice(1,6)
  //let ans=a.slice(0,-6)  //  remove from last
- //document.write(ans)
+ //document.write(ans)  it gives 4,7,9,1,3
 
 
 // =======splice=========

@@ -1,0 +1,40 @@
+*
+{
+    box-sizing: border-box;
+}
+
+#red{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#cent{
+    border: 1px solid black;
+    width: 130px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+#midd{
+    position: absolute;
+    top: 8px;
+    left: 30%;
+}
+#gold{
+    color: chocolate;
+}
+#display{
+    color: red;
+}
+
+#alarm{
+    position: absolute;
+    top: 8px;
+    left: 50%;
+}
+
+#gold1{
+    color: rgb(254, 109, 5);
+}

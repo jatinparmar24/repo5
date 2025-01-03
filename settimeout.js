@@ -194,3 +194,24 @@
     let currenttime=`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
      show.innerHTML=currenttime
    },1000)
+
+   // alarm
+
+   let rune=()=>{
+
+    let show1=document.querySelector("#inp").value
+
+    setInterval(()=>{
+        
+    let war=document.querySelector("#shows")
+
+    let time=new Date()
+      time=`${time.getHours()}:${time.getMinutes()}`
+
+    if(show1==time)
+    war.innerHTML="Alarm Snoozing"; 
+    war.style.color="red"
+    war.style.fontSize="50px"
+    },1000)
+
+   }
