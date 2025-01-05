@@ -19,7 +19,7 @@
      // template laterals ends here 
 
 
-      //  let click= "The word is <br> in given"       //    used br tag to change line
+      //  let click= "The word is <br> in given"       //    used <br> tag to change line
     //  document.write(click)
 
 
@@ -28,13 +28,13 @@
    // let text= "This is String"
 
    //alert(text)
-  // alert(text.length)
-  // document.write(text.length) to print on body
-  // document.write(text.slice(2,9)) last digit is minus 1 always in slice
+  // alert(text.length)    14
+  // document.write(text.length) // to print on body
+  // document.write(text.slice(2,9))       //    last digit is (-1) always in slice
  // document.write(text.toUpperCase())
  // document.write(text.toLowerCase())
- // document.write(text.charCodeAt(1)) ascii value
-   //  document.write(text.indexOf()) used with string ?
+ // document.write(text.charCodeAt(1))   // ascii value
+   //  document.write(text.indexOf())    // result is -1 // used with string ?
 
           // ========== split ========
 
@@ -56,7 +56,7 @@
 
    
  // let text= "This"  index value starts from zero
-  // document.write(text.charAt(2))  (2) it is index value
+  // document.write(text.charAt(2))  // result = i       (2) it is index value  
 
 
   //let text= "This is an Cybrom"

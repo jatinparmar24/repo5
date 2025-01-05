@@ -2,7 +2,7 @@
 
 function okk(){
 
-    let fruits=["Apple","Mango","Grapes","Banana"]
+    // let fruits=["Apple","Mango","Grapes","Banana"]
 
    // let ans=fruits.length;
    // document.write(ans)  4
@@ -73,7 +73,7 @@ function okk(){
 
 //=====slice=======
 
- let a=[2,4,7,9,1,3,4]
+ // let a=[2,4,7,9,1,3,4]
 
 // let ans=a.slice(1,6)
  //let ans=a.slice(0,-6)  //  remove from last
@@ -82,8 +82,8 @@ function okk(){
 
 // =======splice=========
 
-// a.splice(2,2,14,20)  (starting positon ,    how many number should be deleted,   what to add or how many to add)
-// document.write(a)
+ // a.splice(2,2,14,20) // (starting positon ,    how many number should be deleted,   what to add or how many to add)
+// document.write(a)  // gives [2,4,14,20,1,3,4]
 
 
 //=======map============ to perforn specific method to specific number, alpha bet 
