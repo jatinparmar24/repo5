@@ -18,8 +18,8 @@ function okk(){
  // shift it removes starting element
 
  // let ans= fruits.shift()
- // document.write(ans)// gives what it store or what it removes 
- //document.write(fruits) shows what it remains after shifting
+ // document.write(ans) // gives what it store or what it removes 
+ //document.write(fruits) // shows what it remains after shifting
 
  //push adds the last element
 
