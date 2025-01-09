@@ -1,0 +1,21 @@
+.swiper{
+    width: 100%;
+    height: 100vh;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    background-color: aquamarine;
+}
+
+.next{
+    position: absolute;
+    z-index: 100;
+    top: 40%;
+    right: 5%;
+    font-size: 40px;
+    color: red;
+}
