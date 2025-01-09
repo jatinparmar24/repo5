@@ -42,3 +42,8 @@
    return false
 
  }
+
+ let logout=()=>{
+  localStorage.clear()
+  location.href='localLogin.html'
+ }
