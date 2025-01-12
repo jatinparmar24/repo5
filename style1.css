@@ -16,7 +16,7 @@
     width: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 120px;
+    gap: 110px;
     list-style: none;
 }
 #navbar nav ul li a{
