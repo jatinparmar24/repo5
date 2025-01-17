@@ -42,3 +42,38 @@ let del=(id)=>{
 
     fetch(urls,{method:"DELETE"})
 }
+
+
+let formsubmit=()=>{
+
+    let inpname=document.querySelector("#formname").value;
+    let inpage=document.querySelector("#formage").value;
+    let inpnum=document.querySelector("#formnum").value;
+    let inpplace=document.querySelector("#formplace").value;
+    let inppeople=document.querySelector("#formpeople").value;
+    let inpdate=document.querySelector("#formdate").value;
+
+
+    let url='http://localhost:3000/flight'
+    fetch(url,{
+
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(
+
+                 {
+                    name:inpname,
+                    age:inpage,
+                    number:inpnum,
+                    place:inpplace,
+                    people:inppeople,
+                    price:1000
+                 }
+
+        )
+
+
+    })
+}

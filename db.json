@@ -29,6 +29,15 @@
       "price": 4500,
       "people": 5,
       "id": "d66f"
+    },
+    {
+      "id": "eab7",
+      "name": "jatin",
+      "age": "40",
+      "number": "1111111111",
+      "place": "Mumbai",
+      "people": "5",
+      "price": 1000
     }
   ]
 }
