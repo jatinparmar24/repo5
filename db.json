@@ -1,16 +1,34 @@
-
-
-
 {
-    "flight":[
-    
-    {"name":"jatin","age":23,"number":5632147894,"place":"sehore","visit":"mumbai","price":1000},
-    
-    {"name":"raj","age":25,"number":1236598741,"place":"bhopal","visit":"delhi","price":1500},
-    
-    {"name":"vijay","age":27,"number":1236859741,"place":"rewa","visit":"madurai","price":2000},
-
-    {"name":"abhi","age":30,"number":363685741,"place":"satna","visit":"kashmir","price":4500}
-    
-    ]
+  "flight": [
+    {
+      "name": "jatin",
+      "age": 23,
+      "number": 5632147894,
+      "place": "sehore",
+      "visit": "mumbai",
+      "price": 1000,
+      "people": 2,
+      "id": "3366"
+    },
+    {
+      "name": "raj",
+      "age": 25,
+      "number": 1236598741,
+      "place": "bhopal",
+      "visit": "delhi",
+      "price": 1500,
+      "people": 3,
+      "id": "7217"
+    },
+    {
+      "name": "abhi",
+      "age": 30,
+      "number": 363685741,
+      "place": "satna",
+      "visit": "kashmir",
+      "price": 4500,
+      "people": 5,
+      "id": "d66f"
+    }
+  ]
 }

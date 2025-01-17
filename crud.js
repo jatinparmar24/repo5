@@ -21,45 +21,24 @@ let fetchData=async()=>{
             <td>${e.place}</td>
              <td>${e.visit}</td>
               <td>${e.price}</td>
+              <td>${e.people}</td>
+              <td>${e.price*e.people}</td>
+              <td onclick="del('${e.id}')">Cancel</td>
        
         
 
         </tr>
-        
-        
-        
-        
         `
     })
 
 
 }
 
-// let fetchData=async()=>{
-
-// let url='http://localhost:3000/Flight'
-// let response=await fetch(url,{method:"GET"})
-
-// let data=await response.json()
-// console.log(data);
 
 
-// let show=document.querySelector("#display")
-//  data.map((e)=>{
+let del=(id)=>{
 
-// show.innerHTML+=`
+    let urls=`http://localhost:3000/flight/${id}`
 
-// <tr>
-
-// <td>${e.name}</td>
-// <td>${e.age}</td>
-// <td>${e.number}</td>
-// <td>${e.place}</td>
-// <td>${e.visit}</td>
-// <td>${e.price}</td>
-
-
-// </tr>
-// `
-//  })
-// }
+    fetch(urls,{method:"DELETE"})
+}
