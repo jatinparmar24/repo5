@@ -19,7 +19,6 @@ let fetchData=async()=>{
           <td>${e.age}</td>
            <td>${e.number}</td>
             <td>${e.place}</td>
-             <td>${e.visit}</td>
               <td>${e.price}</td>
               <td>${e.people}</td>
               <td>${e.price*e.people}</td>
@@ -42,6 +41,9 @@ let del=(id)=>{
 
     fetch(urls,{method:"DELETE"})
 }
+
+
+
 
 
 let formsubmit=()=>{
@@ -69,11 +71,14 @@ let formsubmit=()=>{
                     number:inpnum,
                     place:inpplace,
                     people:inppeople,
-                    price:1000
+                    price:2000
                  }
 
         )
 
 
     })
+
+    location.href='crud.html'
+    return false;
 }
