@@ -23,6 +23,7 @@ let fetchData=async()=>{
               <td>${e.people}</td>
               <td>${e.price*e.people}</td>
               <td onclick="del('${e.id}')">Cancel</td>
+              
        
         
 
