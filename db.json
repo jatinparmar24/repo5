@@ -1,16 +1,6 @@
 {
   "flight": [
     {
-      "name": "jatin",
-      "age": 23,
-      "number": 5632147894,
-      "place": "sehore",
-      "visit": "mumbai",
-      "price": 1000,
-      "people": 2,
-      "id": "3366"
-    },
-    {
       "name": "raj",
       "age": 25,
       "number": 1236598741,
@@ -40,12 +30,12 @@
       "price": 1000
     },
     {
-      "id": "8679",
-      "name": "jat",
-      "age": "20",
-      "number": "1236598938",
+      "id": "0835",
+      "name": "sahil",
+      "age": "25",
+      "number": "3265987452",
       "place": "Kashmir",
-      "people": "18",
+      "people": "6",
       "price": 2000
     }
   ]
