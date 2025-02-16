@@ -57,6 +57,7 @@ show3.addEventListener("click",()=>{
     let show4=document.querySelector("#seer")
     if(show4.style.display=="none"){
         show4.style.display="block"
+        show3.innerHTML="Hide"
     }
     else{
         show4.style.display="none";
