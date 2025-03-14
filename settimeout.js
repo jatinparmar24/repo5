@@ -209,7 +209,7 @@
 
     let time=new Date()   // time in object form=====
 
-      time=`${time.getHours().toString() .padStart(2,"0")}:${time.getMinutes().toString() .padStart(2,"0")}`   // get hours are in  number form so we use to string to change intt string because padstart take value in strinf format ===== padstart take 2 parameter first is how many digit u want to add and secondly whar u want to add
+      time=`${time.getHours().toString() .padStart(2,"0")}:${time.getMinutes().toString() .padStart(2,"0")}`   // get hours are in  number form so we use to string to change intt string because padstart take value in string format ===== padstart take 2 parameter first is how many digit u want to add and secondly whar u want to add
 
     if(show1==time){
     war.innerHTML="Alarm Snoozing";
