@@ -21,15 +21,16 @@
 #sec1head{
     font-size: 60px;
     position: absolute;
-    top: 5%;
-    left: 25%;
+    top: 8%;
+    left: 30%;
+    color: darkblue;
 }
 
 #sec1 .div1{
     width: 200px;
     height: 250px;
     border: 1px solid none;
-    margin-left: 2%;
+    margin-left: 1%;
     border-radius: 30px;
     border-top: 40px;
     background: linear-gradient(to bottom,beige,red);
@@ -85,11 +86,11 @@
 }
 
 #sec2head{
-    font-size: 50px;
+    font-size: 55px;
     color: crimson;
     position: absolute;
-    top: 5%;
-    left: 13%;
+    top: 10%;
+    left: 28%;
 }
 
 .box{
@@ -147,6 +148,14 @@
     height: 100vh;
     border: 1px solid black;
 } 
+
+#sec3head{
+    font-size: 60px;
+    color: crimson;
+    position: relative;
+    top: 10%;
+    left: 25%;
+}
 
 #sec3 div{
     position: relative;
@@ -206,7 +215,17 @@
     width: 100%;
     height: 100vh;
     background-color: black;
+    position: relative;
 }
+
+#sec4head{
+    font-size: 60px;
+    color: crimson;
+    position: absolute;
+    top: 8%;
+    left: 28%;
+}
+
 
 #sec4 .container{
     position: relative;
