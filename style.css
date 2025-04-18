@@ -63,6 +63,7 @@ ul{
 
 
 
-@media(max-width:450px){
-    
+.acr{
+    color: red;
+    font-size: 20px;
 }
