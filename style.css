@@ -58,12 +58,13 @@ ul{
 #about{
     width: 100%;
     height: 100vh;
+    border: 1px solid black;
 }
 
 
 
 
 .acr{
-    color: red;
-    font-size: 20px;
+    color: rgba(241, 124, 124, 0.719);
+    font-size: 30px;
 }
