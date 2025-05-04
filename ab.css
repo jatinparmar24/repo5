@@ -430,3 +430,88 @@
     box-shadow: 0 2px 5px rbga(0,0,0,.2);
 }
 
+/* section 5 ends here */
+
+
+/* section 6 starts from here */
+
+#sec6
+{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #112c38;
+}
+
+#sec6 ul
+{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    gap: 70px;
+}
+
+#sec6 ul li
+{
+    margin: 0%;
+    list-style: none;
+    transition: 0.5px;
+
+}
+
+#sec6 ul li a 
+{
+    position: relative;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+#sec6 ul:hover li a 
+{
+   transform: scale(1.2);
+   opacity: .2;
+   /* filter: blur(5px); */
+}
+
+#sec6 ul li a:hover
+{
+   transform: scale(1.5);
+   opacity: 1;
+   filter: blur(0);
+}
+
+#sec6 ul li a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff497c;
+    border-radius: 30px;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(1);
+    z-index: -1;
+}
+
+#sec6 ul li a:hover:before
+{
+    transition: transform 0.5s;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+/* section 6 ends here */
