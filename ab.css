@@ -556,6 +556,46 @@ section{
     transform: rotate(10deg);
 }
 
+.leaf1{
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 40px;
+    height: 10px;
+    border: 1px solid black;
+    transform: rotate(15deg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    background: linear-gradient(to right,rgba(7, 151, 7, 0.904),rgba(2, 223, 2, 0.811));
+}
+
+.leaf2{
+    position: absolute;
+    top: -13px;
+    left: 2px;
+    width: 40px;
+    height: 10px;
+    border: 1px solid black;
+    transform: rotate(-30deg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    background: linear-gradient(to right,rgba(7, 151, 7, 0.904),rgba(2, 223, 2, 0.811));
+}
+
+
+.leaf3{
+    position: absolute;
+    top: 1px;
+    right: 9px;
+    width: 40px;
+    height: 10px;
+    border: 1px solid black;
+    transform: rotate(-15deg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    background: linear-gradient(to right,rgba(2, 223, 2, 0.811),rgba(7, 151, 7, 0.904));
+}
+
 
 .sec7-sdiv2{
     position: absolute;
@@ -571,6 +611,35 @@ section{
     transform: rotate(-10deg);
 }
 
+.leaf4{
+    position: absolute;
+    top: -15px;
+    left: 1px;
+    width: 40px;
+    height: 10px;
+    border: 1px solid black;
+    transform: rotate(-35deg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    background: linear-gradient(to right,rgba(7, 151, 7, 0.904),rgba(2, 223, 2, 0.811));
+}
+
+
+
+.leaf5{
+    position: absolute;
+    top: 1px;
+    right: 9px;
+    width: 40px;
+    height: 10px;
+    border: 1px solid black;
+    transform: rotate(-15deg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    background: linear-gradient(to right,rgba(2, 223, 2, 0.811),rgba(7, 151, 7, 0.904));
+}
+
+/* island */
 .sec7-div2{
     position: absolute;
     width: 150px;
@@ -595,6 +664,7 @@ section{
     border: 1px solid black;
     border-top-left-radius: 15px;
     border-top-right-radius: 10px;
+    background: linear-gradient(to bottom,rgb(209, 208, 208),rgb(250, 230, 230));
 }
 
 .subship1{
@@ -605,6 +675,82 @@ section{
     bottom: -0.5px;
     left: -20px;
     border-top-right-radius: 20px;
+    background: linear-gradient(to bottom,rgb(209, 208, 208),rgb(250, 230, 230));
+
 }
+
+.ship-window{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #000;
+}
+
+.windowb1{
+    width: 3px;
+    height: 30px;
+    position: absolute;
+    left: 18px;
+    border-radius: 2px;
+    border: 1px solid none;
+    background-color: #fff;
+}
+
+.windowb2{
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    left: 18px;
+    top: -6px;
+    border-radius: 2px;
+    border: 1px solid none;
+    transform: rotate(90deg);
+    background-color: #fff;
+
+}
+
+.second-portion{
+    width: 160px;
+    height: 50px;
+    border: 1px solid black;
+    border-bottom: none;
+    position: absolute;
+    top: 100px;
+    right: 110px;
+    border-top-left-radius: 20px;
+    background: linear-gradient(to bottom,rgb(201, 173, 173),rgb(251, 235, 235));
+}
+
+.gate-second{
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: rgb(188, 164, 164);
+
+}
+
+.gate-entry{
+    position: absolute;
+    top: 19px;
+    left: 7px;
+    width: 15px;
+    height: 20px;
+    border-bottom: none;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: inset 2px 2px 2px grey;
+    background-color: rgb(222, 219, 219);
+}
+
+
+
 
 /* section 7 ends here */
