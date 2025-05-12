@@ -523,233 +523,271 @@ section{
 
 /* section 7 starts from here */
 
-#sec7{
-    width: 100%;
-    height: 100vh;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#sec7 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, #87ceeb 70%, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#sec7 .sec7-div{
-    width: 800px;
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 50px;
-    position: relative;
-    background: linear-gradient(to bottom,rgba(248, 162, 2, 0.422), rgba(253, 69, 2, 0.795),rgb(0, 230, 246));
+.sec7-div {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background: linear-gradient(to bottom, rgba(248, 162, 2, 0.4), rgba(253, 69, 2, 0.7), rgb(0, 230, 246));
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
-.sec7-sdiv1{
-    position: absolute;
-    width: 15px;
-    height: 120px;
-    background: linear-gradient(to top,rgba(165, 42, 42, 0.597),rgb(167, 99, 9),burlywood);
-    top: 65px;
-    left: 130px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-    transform: rotate(10deg);
+/* Trees */
+.sec7-sdiv1, .sec7-sdiv2 {
+  position: absolute;
+  width: 15px;
+  height: 120px;
+  background: linear-gradient(to top, rgba(165, 42, 42, 0.6), rgb(167, 99, 9), burlywood);
+  border-radius: 100px / 150px;
+  top: 75px;
 }
 
-.leaf1{
-    position: absolute;
-    top: 2px;
-    left: 8px;
-    width: 40px;
-    height: 10px;
-    border: 1px solid black;
-    transform: rotate(15deg);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 8px;
-    background: linear-gradient(to right,rgba(7, 151, 7, 0.904),rgba(2, 223, 2, 0.811));
+.sec7-sdiv1 {
+  left: 130px;
+  transform: rotate(10deg);
+}
+.sec7-sdiv2 {
+  left: 100px;
+  transform: rotate(-10deg);
 }
 
-.leaf2{
-    position: absolute;
-    top: -13px;
-    left: 2px;
-    width: 40px;
-    height: 10px;
-    border: 1px solid black;
-    transform: rotate(-30deg);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 8px;
-    background: linear-gradient(to right,rgba(7, 151, 7, 0.904),rgba(2, 223, 2, 0.811));
+.leaf1, .leaf2, .leaf3, .leaf4, .leaf5 {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background: linear-gradient(to right, rgba(7, 151, 7, 0.9), rgba(2, 223, 2, 0.8));
+  border-radius: 10px 10px 0 0;
+  border: 1px solid black;
 }
 
-
-.leaf3{
-    position: absolute;
-    top: 1px;
-    right: 9px;
-    width: 40px;
-    height: 10px;
-    border: 1px solid black;
-    transform: rotate(-15deg);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 8px;
-    background: linear-gradient(to right,rgba(2, 223, 2, 0.811),rgba(7, 151, 7, 0.904));
+.leaf1 {
+  top: 2px;
+  left: 8px;
+  transform: rotate(15deg);
+}
+.leaf2 {
+  top: -13px;
+  left: 2px;
+  transform: rotate(-30deg);
+}
+.leaf3 {
+  top: 1px;
+  right: 9px;
+  background: linear-gradient(to right, rgba(2, 223, 2, 0.8), rgba(7, 151, 7, 0.9));
+  transform: rotate(-15deg);
+}
+.leaf4 {
+  top: -15px;
+  left: 1px;
+  transform: rotate(-35deg);
+}
+.leaf5 {
+  top: 1px;
+  right: 9px;
+  background: linear-gradient(to right, rgba(2, 223, 2, 0.8), rgba(7, 151, 7, 0.9));
+  transform: rotate(-15deg);
 }
 
-
-.sec7-sdiv2{
-    position: absolute;
-    width: 15px;
-    height: 120px;
-    background: linear-gradient(to top,rgba(165, 42, 42, 0.597),rgb(167, 99, 9),burlywood);
-    top: 65px;
-    left: 100px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-    transform: rotate(-10deg);
+/* Island */
+.sec7-div2 {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: 190px;
+  left: 50px;
+  background: linear-gradient(to bottom, rgba(152, 26, 26, 0.6), burlywood);
+  border-radius: 30px 30px 100px 100px;
+  animation: island 3s ease-in-out infinite alternate;
 }
 
-.leaf4{
-    position: absolute;
-    top: -15px;
-    left: 1px;
-    width: 40px;
-    height: 10px;
-    border: 1px solid black;
-    transform: rotate(-35deg);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 8px;
-    background: linear-gradient(to right,rgba(7, 151, 7, 0.904),rgba(2, 223, 2, 0.811));
+@keyframes island {
+  0% { transform: translateY(0) rotate(1deg); }
+  100% { transform: translateY(-4px) rotate(-2deg); }
 }
 
-
-
-.leaf5{
-    position: absolute;
-    top: 1px;
-    right: 9px;
-    width: 40px;
-    height: 10px;
-    border: 1px solid black;
-    transform: rotate(-15deg);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 8px;
-    background: linear-gradient(to right,rgba(2, 223, 2, 0.811),rgba(7, 151, 7, 0.904));
+/* Ship */
+.sec7-mainship {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(to bottom, #d1d0d0, #fae6e6);
+  border-radius: 15px 10px 0 0;
+  border: 1px solid black;
+  animation: shipFloat 3s ease-in-out infinite alternate;
 }
 
-/* island */
-.sec7-div2{
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    top: 170px;
-    left: 50px;
-    /* border: 3px solid burlywood; */
-    background: linear-gradient(to bottom,rgba(152, 26, 26, 0.551),burlywood,burlywood,burlywood);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+@keyframes shipFloat {
+  0% { transform: translateY(5) rotate(1deg); }
+  100% { transform: translateY(-5px) rotate(-1deg); }
 }
 
-
-.sec7-mainship{
-    position: absolute;
-    top: 150px;
-    right: 100px;
-    width: 200px;
-    height: 60px;
-    border: 1px solid black;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 10px;
-    background: linear-gradient(to bottom,rgb(209, 208, 208),rgb(250, 230, 230));
+.subship1 {
+  position: absolute;
+  width: 20px;
+  height: 65px;
+  left: -20px;
+  bottom: -1px;
+  background: linear-gradient(to bottom, #d1d0d0, #fae6e6);
+  border-top-right-radius: 20px;
+  border: 1px solid black;
 }
 
-.subship1{
-    position: absolute;
-    width: 20px;
-    height: 65px;
-    border: 1px solid black;
-    bottom: -0.5px;
-    left: -20px;
-    border-top-right-radius: 20px;
-    background: linear-gradient(to bottom,rgb(209, 208, 208),rgb(250, 230, 230));
-
+.ship-window {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 40px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.windowb1, .windowb2 {
+  position: absolute;
+  background: white;
+  width: 3px;
+  border-radius: 2px;
+}
+.windowb1 {
+  height: 30px;
+  left: 18px;
+}
+.windowb2 {
+  height: 40px;
+  top: -6px;
+  left: 18px;
+  transform: rotate(90deg);
 }
 
-.ship-window{
-    position: absolute;
-    left: 10px;
-    top: 5px;
-    width: 40px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: #000;
+/* Upper Portion */
+.second-portion {
+  position: absolute;
+  top: 150px;
+  right: 110px;
+  width: 160px;
+  height: 50px;
+  background: linear-gradient(to bottom, #c9adad, #fbebeb);
+  border-top-left-radius: 20px;
+  border: 1px solid black;
 }
 
-.windowb1{
-    width: 3px;
-    height: 30px;
-    position: absolute;
-    left: 18px;
-    border-radius: 2px;
-    border: 1px solid none;
-    background-color: #fff;
+.gate-second {
+  position: absolute;
+  top: 9px;
+  right: 45px;
+  width: 30px;
+  height: 40px;
+  background: #bca4a4;
+  border: 1px solid black;
 }
 
-.windowb2{
-    width: 3px;
-    height: 40px;
-    position: absolute;
-    left: 18px;
-    top: -6px;
-    border-radius: 2px;
-    border: 1px solid none;
-    transform: rotate(90deg);
-    background-color: #fff;
-
+.gate-entry {
+  margin: 5px auto;
+  width: 15px;
+  height: 20px;
+  background: #dedbdb;
+  border: 1px solid black;
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset 2px 2px 2px grey;
 }
 
-.second-portion{
-    width: 160px;
-    height: 50px;
-    border: 1px solid black;
-    border-bottom: none;
-    position: absolute;
-    top: 100px;
-    right: 110px;
-    border-top-left-radius: 20px;
-    background: linear-gradient(to bottom,rgb(201, 173, 173),rgb(251, 235, 235));
+/* Tower */
+.ship-tower {
+  position: absolute;
+  top: 100.5px;
+  right: 120px;
+  width: 20px;
+  height: 50px;
+  background: rgba(175, 87, 87, 0.65);
+  border: 1px solid black;
 }
 
-.gate-second{
-    position: absolute;
-    top: 10px;
-    right: 45px;
-    width: 30px;
-    height: 40px;
-    border: 1px solid black;
-    background-color: rgb(188, 164, 164);
-
+/* Top */
+.ship-top {
+  position: absolute;
+  right: 105px;
+  top: 76px;
+  width: 50px;
+  height: 25px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: inset 1px 1px 1px black, 1px 1px 1px grey;
 }
 
-.gate-entry{
-    position: absolute;
-    top: 19px;
-    left: 7px;
-    width: 15px;
-    height: 20px;
-    border-bottom: none;
-    border: 1px solid black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    box-shadow: inset 2px 2px 2px grey;
-    background-color: rgb(222, 219, 219);
+/* Sun */
+.sun {
+  position: absolute;
+  top: 30px;
+  left: 330px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #FFD700, #FFA500);
+  border-radius: 50%;
+  box-shadow: 0 0 40px 10px rgba(255, 215, 0, 0.6);
+  animation: sunPulse 3s ease-in-out infinite;
 }
 
+@keyframes sunPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Birds */
+.bird-container {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bird {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotate(-45deg);
+  opacity: 0.8;
+}
+
+.bird1 {
+  top: 10px;
+  left: -50px;
+  animation: fly 10s linear infinite;
+}
+
+.bird2 {
+  top: 30px;
+  left: -100px;
+  animation: fly 12s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0) rotate(-45deg);
+  }
+  100% {
+    transform: translateX(100vw) rotate(-45deg);
+  }
+}
 
 
 
