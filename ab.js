@@ -76,3 +76,19 @@ const cyan=()=>{
     let hide4=document.querySelector(".div1")
      hide4.style.opacity="1"
 }
+
+
+// sec8
+const flipCard = document.getElementById('flipCard');
+const flipBtn = document.getElementById('flipBtn');
+const flipBackBtn = document.getElementById('flipBackBtn');
+
+flipBtn.addEventListener('click', () => {
+  flipCard.classList.add('flipped');
+});
+
+flipBackBtn.addEventListener('click', () => {
+  flipCard.classList.remove('flipped');
+});
+
+// sec8

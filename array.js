@@ -135,7 +135,7 @@ function start(){
 
     let show= document.getElementById("text")
   //  show.textContent=("Yes it comes") changes only content
-  show.innerHTML="<h2>Yes it comes</h2>"
+    show.innerHTML="<h2>Yes it comes</h2>"
     show.style.color="blue"
 
 
