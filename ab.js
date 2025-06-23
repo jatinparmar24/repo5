@@ -1,3 +1,48 @@
+// aura
+const auraSection = document.querySelector("#aura-landing");
+
+// Mouse trail
+auraSection.addEventListener("mousemove", (e) => {
+  const trail = auraSection.querySelector(".mouse-trail");
+  trail.style.setProperty("--x", `${e.clientX}px`);
+  trail.style.setProperty("--y", `${e.clientY}px`);
+});
+
+// Smooth scroll to features
+const startBtn = auraSection.querySelector(".aura-start-btn");
+startBtn.addEventListener("click", () => {
+  auraSection.querySelector(".aura-features").scrollIntoView({ behavior: "smooth" });
+});
+
+// Typing animation effect for the subtitle
+const subtitle = auraSection.querySelector(".aura-hero p");
+const messages = [
+  "Your Futuristic AI Assistant",
+  "Powered by Intelligence",
+  "Designed for the Next Era"
+];
+let messageIndex = 0;
+let charIndex = 0;
+
+function typeText() {
+  const currentMessage = messages[messageIndex];
+  subtitle.textContent = currentMessage.substring(0, charIndex++);
+
+  if (charIndex > currentMessage.length) {
+    setTimeout(() => {
+      charIndex = 0;
+      messageIndex = (messageIndex + 1) % messages.length;
+      typeText();
+    }, 1500);
+  } else {
+    setTimeout(typeText, 75);
+  }
+}
+
+setTimeout(typeText, 500);
+
+// aura
+
 
 // sec1
 const red=()=>{
