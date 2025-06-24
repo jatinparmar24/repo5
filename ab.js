@@ -8,26 +8,41 @@ auraSection.addEventListener("mousemove", (e) => {
   trail.style.setProperty("--y", `${e.clientY}px`);
 });
 
-// Smooth scroll to features
+// Scroll to features
 const startBtn = auraSection.querySelector(".aura-start-btn");
 startBtn.addEventListener("click", () => {
   auraSection.querySelector(".aura-features").scrollIntoView({ behavior: "smooth" });
 });
 
-// Typing animation effect for the subtitle
+// Typing Title
+const typingTitle = document.getElementById("aura-typing-title");
+const titleTexts = ["Welcome to AURA", "Experience the Future", "Crafted with Intelligence"];
+let titleI = 0, titleChar = 0;
+function typeTitle() {
+  typingTitle.innerHTML = titleTexts[titleI].substring(0, titleChar++);
+  if (titleChar > titleTexts[titleI].length) {
+    setTimeout(() => {
+      titleChar = 0;
+      titleI = (titleI + 1) % titleTexts.length;
+      typeTitle();
+    }, 1800);
+  } else {
+    setTimeout(typeTitle, 80);
+  }
+}
+setTimeout(typeTitle, 500);
+
+// Subtitle typing animation
 const subtitle = auraSection.querySelector(".aura-hero p");
 const messages = [
   "Your Futuristic AI Assistant",
   "Powered by Intelligence",
   "Designed for the Next Era"
 ];
-let messageIndex = 0;
-let charIndex = 0;
-
+let messageIndex = 0, charIndex = 0;
 function typeText() {
   const currentMessage = messages[messageIndex];
   subtitle.textContent = currentMessage.substring(0, charIndex++);
-
   if (charIndex > currentMessage.length) {
     setTimeout(() => {
       charIndex = 0;
@@ -38,8 +53,63 @@ function typeText() {
     setTimeout(typeText, 75);
   }
 }
-
 setTimeout(typeText, 500);
+
+// Particles
+const canvas = document.getElementById("aura-particles");
+const ctx = canvas.getContext("2d");
+let particles = [];
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+for (let i = 0; i < 100; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2,
+    dx: (Math.random() - 0.5) * 0.5,
+    dy: (Math.random() - 0.5) * 0.5,
+  });
+}
+function animateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let p of particles) {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(0,242,254,0.3)";
+    ctx.fill();
+    p.x += p.dx;
+    p.y += p.dy;
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  }
+  requestAnimationFrame(animateParticles);
+}
+animateParticles();
+
+// Hover sound effect
+const hoverSound = document.getElementById("hover-sound");
+document.querySelectorAll(".aura-start-btn, .aura-card").forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    hoverSound.currentTime = 0;
+    hoverSound.play();
+  });
+});
+
+// Animate on scroll
+const animatedEls = document.querySelectorAll("[data-animate]");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+    }
+  });
+});
+animatedEls.forEach(el => observer.observe(el));
+
 
 // aura
 
