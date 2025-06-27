@@ -435,68 +435,118 @@ section{
 
 /* section 3 starts here */
 
- #sec3{
-    width: 100%;
-    height: 100vh;
-    border: 1px solid black;
-} 
-
-#sec3head{
-    font-size: 60px;
-    color: crimson;
-    position: relative;
-    top: 10%;
-    left: 25%;
+/* Section Styling with Background and Layout */
+#sec3 {
+  width: 100%;
+  height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
 }
 
-#sec3 div{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+/* Section Heading Animation and Style */
+#sec3head {
+  font-size: 3rem;
+  color: #ff4b5c;
+  margin-bottom: 50px;
+  position: relative;
+  animation: slideDown 1s ease forwards;
+  opacity: 0;
+  text-align: center;
+}
+
+/* Main Animated Circle Container */
+#sec3 .circle-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.6s ease-in-out;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+/* Hover Effect for Circle */
+#sec3 .circle-container:hover {
+  border-radius: 12px;
+  transform: scale(1.05);
+  background: rgba(255, 75, 92, 0.2);
+  box-shadow: 0 0 30px rgba(255, 75, 92, 0.6);
+}
+
+/* Paragraph Styling */
+#sec3 .circle-container p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.5;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Paragraph on Hover */
+#sec3 .circle-container:hover p {
+  color: #ffdfdf;
+  text-shadow: 0 0 10px #ff4b5c;
+}
+
+/* Animation: Fade In */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation: Slide Down */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 600px) {
+  #sec3head {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  #sec3 .circle-container {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 15px red;
-    box-sizing: border-box;
-    text-align: center;
-    transition: .5s;
-}
+    padding: 15px;
+  }
 
-#sec3 div:hover{
-    border-radius: 0%;
-    /* background: red; */
+  #sec3 .circle-container p {
+    font-size: 0.9rem;
+  }
 }
 
 
-#sec3 div::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: red;
-    z-index: -1;
-    transform: rotate(-45deg);
-}
-
-#sec3 div p{
-    margin: 0%;
-    padding: 0%;
-    color: aliceblue;
-    font-size: 18px;
-    padding: 20px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: .5s;
-}
-#sec3 div:hover p{
-    box-shadow: 0 0 50px rgba(0,0,0, .5);
-}
-
+/* section3 */
 
 /* section 4 starts here */
 
