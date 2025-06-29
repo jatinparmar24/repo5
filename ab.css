@@ -776,81 +776,63 @@ section{
 
 /* section 6 starts from here */
 
-#sec6
-{
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: #112c38;
+#sec6 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-#sec6 ul
-{
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    gap: 70px;
+.nav-menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-#sec6 ul li
-{
-    margin: 0%;
-    list-style: none;
-    transition: 0.5px;
-
+.nav-menu li {
+  position: relative;
 }
 
-#sec6 ul li a 
-{
-    position: relative;
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-    transition: 0.5s;
-    text-transform: uppercase;
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
-#sec6 ul:hover li a 
-{
-   transform: scale(1.4);
-   opacity: .2;
-   /* filter: blur(5px); */
+.nav-menu a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 100%;
+  background: #ff497c;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-#sec6 ul li a:hover
-{
-   transform: scale(1.3);
-   opacity: 1;
-   filter: blur(0);
+.nav-menu a:hover::before {
+  width: 110%;
 }
 
-#sec6 ul li a::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ff497c;
-    border-radius: 30px;
-    transition: 0.5s;
-    transform-origin: right;
-    transform: scaleX(1);
-    z-index: -1;
-}
-
-#sec6 ul li a:hover:before
-{
-    transition: transform 0.5s;
-    transform: scaleX(1);
-    transform-origin: left;
+.nav-menu a:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
 
