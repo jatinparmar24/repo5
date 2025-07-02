@@ -1281,79 +1281,77 @@ section{
 /* section 8 starts from here */
 
 #sec8 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  font-family: 'Segoe UI', sans-serif;
   height: 100vh;
-  margin: 0;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 320px;
-  height: 220px;
-  perspective: 1000px;
+#sec8 .card-container {
+  width: 330px;
+  height: 230px;
+  perspective: 1200px;
 }
 
-.flip-card-inner {
+#sec8 .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.8s ease-in-out;
   transform-style: preserve-3d;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-  border-radius: 15px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.flip-card.flipped .flip-card-inner {
+#sec8 .flipped .card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, 
-.flip-card-back {
+#sec8 .card-face {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: white;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
   padding: 25px;
   box-sizing: border-box;
-  color: #333;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.05);
 }
 
-.flip-card-front {
-  font-weight: 600;
-  font-size: 20px;
+#sec8 .card-face.front {
+  transform: rotateY(0deg);
 }
 
-.flip-card-back {
+#sec8 .card-face.back {
   transform: rotateY(180deg);
-  font-size: 18px;
-  color: #444;
 }
 
- #sec8 button {
+#sec8 button {
   margin-top: 20px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 12px 22px;
+  background: #ffffff20;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 20px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   align-self: center;
 }
 
 #sec8 button:hover {
-  background-color: #0056b3;
+  background: #ffffff40;
+  transform: scale(1.05);
 }
 
 /* section 8 ends here */
