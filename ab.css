@@ -1447,3 +1447,139 @@ section{
 
 
 /* section 9 ends here */
+
+/* sec 10 */
+
+#sec10 {
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+
+.sec10-light {
+  background: linear-gradient(to right, #f1f5f9, #e2e8f0);
+  color: #1e293b;
+}
+
+
+.sec10-dark {
+  background: linear-gradient(to right, #0f172a, #1e3a8a);
+  color: #f1f5f9;
+}
+
+.sec10-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.sec10-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.sec10-intro {
+  font-size: 1.125rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.sec10-theme-toggle {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sec10-theme-toggle:hover {
+  background: #2563eb;
+}
+
+
+.sec10-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.sec10-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 22px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sec10-light .sec10-card {
+  background: white;
+  color: #1e293b;
+  border: 1px solid #e5e7eb;
+}
+
+.sec10-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.sec10-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.sec10-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+
+.sec10-interactive {
+  margin-top: 40px;
+}
+
+.sec10-toggle-btn {
+  padding: 12px 28px;
+  background: #facc15;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sec10-toggle-btn:hover {
+  background: #eab308;
+}
+
+#sec10-fact {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #38bdf8;
+  transition: opacity 0.3s ease;
+}
+
+.sec10-hidden {
+  display: none;
+}
+
+/* sec 10 */

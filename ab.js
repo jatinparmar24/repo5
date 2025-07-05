@@ -207,3 +207,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // sec9
+
+// sec 10
+    function toggleFact() {
+      const fact = document.getElementById("sec10-fact");
+      fact.classList.toggle("sec10-hidden");
+    }
+
+    function toggleTheme() {
+      const sec10 = document.getElementById("sec10");
+      sec10.classList.toggle("sec10-dark");
+      sec10.classList.toggle("sec10-light");
+    }
+
+// sec 10
