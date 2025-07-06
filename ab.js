@@ -164,6 +164,25 @@ toggle.addEventListener('click', () => {
 
 // sec1
 
+// sec 6
+  const toggles = document.getElementById('navToggle');
+  const menu = document.getElementById('navMenu');
+  const links = document.querySelectorAll('.nav-menu a');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggles('show');
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      menu.classList.remove('show'); 
+    });
+  });
+
+// sec 6
+
 
 // sec8
 const flipCard = document.getElementById('flipCard');
