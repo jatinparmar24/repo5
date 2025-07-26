@@ -85,3 +85,74 @@ const users = {             // {} used to define an object
 };
 
 console.log(users.hobbies[0]); // [] to access first item in array
+
+
+
+
+// callback function
+
+function greet(name, callback) {
+  console.log("Hi " + name);
+  callback();
+}
+
+function sayBye() {
+  console.log("Bye!");
+}
+
+greet("Jatin", sayBye);
+
+
+// this keyward
+
+// console.log(this);
+    // output=window in js and {} in node.js
+
+function show() {
+console.log(this);
+}
+show(); // ✅ Logs window (in browser)
+// But in strict mode, it will be undefined.
+
+// 3. Inside a Method (Object Function)
+
+const named = {
+  name: "Jatin",
+  greet: function () {
+    console.log(this.name);
+  }
+};
+
+named.greet(); // ✅ Logs "Jatin"
+// 🧠 this refers to the user object because greet() is called as a method of user.
+
+// 4. Alone in Arrow Functions
+
+const usered = {
+  name: "Jatin",
+  greet: () => {
+    console.log(this.name);
+  }
+};
+
+usered.greet(); // ❌ undefined
+// 🧠 Arrow functions don’t bind this.
+// They inherit it from their lexical (outer) scope, which is likely window (or undefined in strict mode).
+
+
+
+
+//  Spread and Rest Operators
+// Spread (... to expand)
+
+const arr1 = [1, 2];
+const arr2 = [...arr1, 3, 4]; // [1, 2, 3, 4]
+
+const user1 = { name: 'Jatin' };
+const user2 = { ...user1, age: 24 }; // { name: 'Jatin', age: 24 }
+// Rest (... to gather)
+
+function sum(...nums) {
+  return nums.reduce((a, b) => a + b);
+}
+console.log(sum(1, 2, 3)); // 6

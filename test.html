@@ -8,7 +8,7 @@
 </head>
 <body>
     
-<main>
+<!-- <main>
 
 <section>
 
@@ -56,6 +56,22 @@
 
 
 
-    <script src="test.js"></script>
+    <script src="test.js"></script> -->
+
+<p id="countdown">5</p>
+
+<script>
+  let count = 5;
+  let interval = setInterval(() => {
+    count--;
+    document.getElementById("countdown").textContent = count;
+    if (count === 0) {
+      clearInterval(interval);
+      alert("Time's up!");
+    }
+  }, 3000);
+</script>
+
+
 </body>
 </html>
