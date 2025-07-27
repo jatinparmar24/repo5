@@ -185,16 +185,16 @@ toggle.addEventListener('click', () => {
 
 
 // sec8
-const flipCard = document.getElementById('flipCard');
-const flipBtn = document.getElementById('flipBtn');
-const flipBackBtn = document.getElementById('flipBackBtn');
+const flipBtn = document.getElementById("sec8-flip-btn");
+const flipBackBtn = document.getElementById("sec8-flip-back-btn");
+const cardInner = document.getElementById("sec8-card-inner");
 
-flipBtn.addEventListener('click', () => {
-  flipCard.classList.add('flipped');
+flipBtn.addEventListener("click", () => {
+  cardInner.classList.add("flipped");
 });
 
-flipBackBtn.addEventListener('click', () => {
-  flipCard.classList.remove('flipped');
+flipBackBtn.addEventListener("click", () => {
+  cardInner.classList.remove("flipped");
 });
 
 // sec8
